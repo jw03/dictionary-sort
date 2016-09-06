@@ -1,6 +1,6 @@
 def dictionary_sort(arr)
   # Your code here to sort the array
-  arr.sort_by(&:downcase)
+  arr.sort_by!(&:downcase)
   p arr
 end
 
