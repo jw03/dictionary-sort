@@ -1,5 +1,18 @@
 def dictionary_sort(arr)
   # Your code here to sort the array
+  arr.sort_by(&:downcase)
+  p arr
 end
 
-# ...your code here to initialize the program and take user input
+arr = []
+
+puts "Hit return on a blank line to exit this program"
+
+loop do
+	puts "Type a word:"
+	input = gets.chomp
+	break if input.empty?
+	arr << input
+end
+
+dictionary_sort(arr)
